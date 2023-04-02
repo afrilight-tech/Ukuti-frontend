@@ -1,0 +1,82 @@
+/* about */
+
+.about {
+    padding-top: 100px;
+    position: relative;
+}
+
+
+.about .aboutOverlay {
+
+    background: linear-gradient(to right, #031636, #010c2e);
+}
+
+.about .aboutImage {
+    background-image: url('../Images/about-us.jpg');
+    opacity: 0.2;
+    height: 500px;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+.aboutText {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
+.aboutText .aboutTextInner {
+    width: 90%;
+    justify-self: center;
+}
+
+.aboutText h3 {
+    font-size: 40px;
+}
+
+.aboutText p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+
+/* first step end */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    /* first step */
+
+    .about .aboutImage {
+        height: 850px;
+    }
+
+    .aboutText .aboutTextInner {
+        width: 90%;
+        justify-self: center;
+    }
+
+    .aboutText h3 {
+        font-size: 28px;
+    }
+
+    .aboutText p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+#header {
+    padding: 10px 0px;
+    margin: 0;
+    display: grid;
+
+    /* background: transparent; */
+    top: 0;
+    z-index: 990;
+    position: fixed;
+    width: 100%;
+    /* position: relative; */
+}
+
+.header_inner {
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* logo */
+
+.logo h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+
+/* menu */
+.menu {
+    right: 0;
+    position: absolute;
+}
+
+.menu ul.menu_links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+.menu ul.menu_links .router_link {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul.menu_links .router_link:hover {
+    color: #4E93F4;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.active {
+    color: #4E93F4 !important;
+    transition: 0.5s linear;
+}
+
+.menu ul.menu_links li {
+    padding: 0px 20px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    /* color: white; */
+    /* padding-top: 5px; */
+}
+
+.menu ul.menu_links li:hover {
+    /* box-shadow: inset 0px 1px 1px 1px #4E93F4;
+    transition: ease-in 0.5s; */
+
+}
+
+.menu ul.menu_links li button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(to right, #063fa3, #031755);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.menu ul.menu_links li button:hover {
+
+    box-shadow: inset 200px 0 0 0 #063fa3;
+    transition: ease-in 0.5s;
+}
+
+
+/* sm_cntrl */
+
+.sm_cntrl {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:850px) {
+    .logo img {
+        height: 60px;
+    }
+
+    .menu ul.menu_links li {
+        padding: 0px 10px;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    #header {
+        padding: 5px 10px;
+        margin: 0;
+        display: grid;
+    }
+
+    .logo h3 {
+        font-size: 18px;
+    }
+
+    .header_inner {
+        position: unset;
+    }
+
+    .header_inner .menu {
+        display: none;
+    }
+
+    .sm_menu {
+        width: 100%;
+        margin-top: 55px;
+        background: linear-gradient(to right, #063fa3, #010c2e);
+        top: 0;
+        right: 0;
+        position: absolute;
+        animation: zoom-in-zoom-out 1s ease;
+        z-index: 990;
+    }
+
+
+    @keyframes zoom-in-zoom-out {
+
+
+
+        0% {
+            transform: skew(90deg);
+        }
+
+    }
+
+    .sm_menu ul.menu_links {
+        display: grid;
+        padding: 0;
+        list-style-type: none;
+        align-items: center;
+
+    }
+
+    .sm_menu ul.menu_links .router_link {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .sm_menu ul.menu_links li {
+        padding: 15px 0px;
+        font-size: 15px;
+        border-bottom: 1px dotted rgba(197, 191, 191, 0.493);
+        width: 90%;
+        justify-self: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .sm_menu ul.menu_links li.button {
+        grid-row: 6;
+        border: none;
+    }
+
+    .sm_menu ul.menu_links li button {
+        padding: 15px 25px;
+        font-size: 15px;
+        border-radius: 5px;
+        color: white;
+        background: linear-gradient(to right, #063fa3, #031755);
+        border: none;
+        outline: none;
+        cursor: pointer;
+       
+    }
+
+    .sm_menu ul.menu_links li button:hover {
+
+        box-shadow: inset 200px 0 0 0 #063fa3;
+        transition: ease-in 0.5s;
+    }
+
+
+    /* sm_cntrl */
+
+    .sm_cntrl {
+        right: 0;
+        position: absolute;
+        margin-right: 10%;
+        display: block;
+    }
+
+    .sm_cntrl .cntrl {
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+}

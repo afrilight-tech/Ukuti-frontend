@@ -1,0 +1,122 @@
+/* why me */
+
+.whyMe {
+    display: grid;
+    padding-top: 100px;
+    background-color: #FCFCFC;
+    overflow: hidden;
+}
+
+.whyMeIntroText {
+    text-align: center;
+    display: grid;
+}
+
+.whyMeIntroText h3 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #4A4A4A;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.whyMeIntroText .star {
+    display: flex;
+    width: fit-content;
+    justify-self: center;
+}
+
+.whyMeIntroText .star hr {
+    width: 100px;
+    border-top: 2px #333333 solid !important;
+    border: none;
+}
+
+.whyMeIntroText .whyMeIntroTextIcon {
+    color: #063fa3;
+    margin: 0px 10px;
+}
+
+
+
+
+.whyMeInner {
+    width: 90%;
+    justify-self: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.whyMeInner .whyMeBox {
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    justify-content: center;
+}
+
+.whyMeInner .whyMeBox img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+ 
+}
+
+.whyMeBox p {
+    display: flex;
+    align-items: center;
+}
+
+
+.whyMeBox p .whyMeIcon {
+    margin-right: 10px;
+    color: #063fa3;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+    /* why me */
+    .whyMeInner {
+        width: 90%;
+        justify-self: center;
+        margin-top: 30px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .whyMeInner .whyMeBox img {
+        width: auto;
+        height: 250px;
+    }
+
+    .whyMeIntroText h3 {
+        font-size: 28px;
+    }
+
+
+
+    .whyMeInner h3 {
+        font-size: 18px;
+        color: #063fa3;
+        text-align: center;
+    }
+
+
+
+
+
+}
